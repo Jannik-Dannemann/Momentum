@@ -12,21 +12,21 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex gap-10">
          <Link
-            href="/company"
+            href="/features-section"
             className="text-foreground transition-all duration-300 hover:brightness-50 font-semibold text-3xl relative group"
           >
             Features
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
-            href="/company"
+            href="/pricing-section"
             className="text-foreground transition-all duration-300 hover:brightness-50 font-semibold text-3xl relative group"
           >
             Pricing
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-secondary transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
-            href="/company"
+            href="/company-section"
             className="text-foreground transition-all duration-300 hover:brightness-50 font-semibold text-3xl relative group"
           >
             Company
