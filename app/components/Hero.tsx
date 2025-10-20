@@ -204,13 +204,13 @@ const Hero = () => {
       <section className="hero-section relative min-h-screen w-full flex flex-col justify-center items-center bg-background text-foreground overflow-hidden">
         <div className="text-center">
           <h1
-            className="text-6xl md:text-9xl font-bold tracking-tighter"
+            className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter"
             data-hero-headline
           >
             {renderLetters("Build Unstoppable", "line1")}
           </h1>
           <h1
-            className="text-6xl md:text-9xl font-bold tracking-tighter z-10"
+            className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter z-10"
             data-hero-headline
           >
             {renderLetters("Momentum.", "line2")}
@@ -228,7 +228,7 @@ const Hero = () => {
             className="mt-10 relative z-20"
             data-hero-cta
           >
-            <button className="relative bg-primary text-foreground text-xl font-semibold py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
+            <button className="relative bg-primary text-foreground text-md md:text-xl font-semibold py-4 px-8 rounded-lg hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300">
               <span
                 ref={gradientOverlay}
                 className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-lg"

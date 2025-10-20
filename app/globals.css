@@ -22,3 +22,8 @@
   /* --- Optional but recommended --- */
   --radius: 0.75rem; /* A base border-radius for elements like buttons */
 }
+
+html {
+  color-scheme: light !important;
+  forced-color-adjust: none !important;
+}

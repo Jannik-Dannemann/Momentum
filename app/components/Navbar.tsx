@@ -10,7 +10,7 @@ const Navbar = () => {
             Momentum
           </Link>
         </div>
-        <div className="hidden md:flex gap-10">
+        <div className="hidden lg:flex gap-10">
          <Link
             href="/features-section"
             className="text-foreground transition-all duration-300 hover:brightness-50 font-semibold text-3xl relative group"
@@ -34,7 +34,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <button className="bg-gradient-to-r from-primary to-secondary text-foreground text-lg font-semibold py-2.5 px-6 rounded-lg hover:shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
+          <button className="bg-gradient-to-r from-primary to-secondary text-foreground text-md sm:text-lg font-semibold py-2 sm:py-2.5 px-3 sm:p-6 rounded-lg hover:shadow-lg hover:shadow-purple-500/20 transition-shadow duration-300">
             Get Started
           </button>
         </div>
