@@ -3,24 +3,19 @@
 
 
 @theme {
-  /* --- Color Palette: Spring Meadow --- */
-  /* These are the semantic names Tailwind v4 is built to recognize. */
+  --color-background: #FDFDFB;  
+  --color-foreground: #3D453A; 
   
-  --color-background: #FDFDFB;  /* Your Ivory White */
-  --color-foreground: #3D453A;  /* Your Deep Moss text color */
-  
-  --color-primary: #A2E4B8;     /* Your main Mint Green accent */
-  --color-primary-foreground: #3D453A; /* Text for on top of the primary color */
+  --color-primary: #A2E4B8;    
+  --color-primary-foreground: #3D453A;
 
-  --color-secondary: #FADBC5;   /* Your secondary Soft Peach accent */
-  --color-secondary-foreground: #3D453A; /* Text for on top of the secondary color */
+  --color-secondary: #FADBC5;
+  --color-secondary-foreground: #3D453A;
   
-  /* --- Font Variables (Your code was correct) --- */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* --- Optional but recommended --- */
-  --radius: 0.75rem; /* A base border-radius for elements like buttons */
+  --radius: 0.75rem;
 }
 
 html {

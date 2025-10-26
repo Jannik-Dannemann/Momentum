@@ -1,5 +1,3 @@
-// components/Company.jsx
-
 import React from "react";
 
 const Company = () => {
@@ -17,8 +15,6 @@ const Company = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          {/* --- I'll be adding the hover effect to these cards via GSAP in Hero.jsx --- */}
           <div data-company-card className="text-center">
             <img src="https://placehold.co/400x400/a2e4b8/3D453A?text=AV" alt="Team Member 1" className="w-48 h-48 rounded-full mx-auto mb-4 object-cover border-4 border-primary"/>
             <h3 className="text-2xl font-bold text-foreground">Ava Verdant</h3>

@@ -17,7 +17,7 @@ const Hero = () => {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // --- ANIMATION 1: HERO EXPANSION (Self-contained) ---
+      //ANIMATION 1: HERO EXPANSION
       const heroTl = gsap.timeline({
         scrollTrigger: {
           trigger: ".hero-section",
@@ -43,7 +43,7 @@ const Hero = () => {
           "<"
         );
 
-      // --- ANIMATION 2: FEATURES FADE-IN (No pin) ---
+      //ANIMATION 2: FEATURES FADE-IN
       gsap.from("[data-feature-box]", {
         scrollTrigger: {
           trigger: "#features-section",
@@ -57,7 +57,7 @@ const Hero = () => {
         ease: "power3.out",
       });
 
-      // --- ANIMATION 3: FEATURES TO PRICING WIPE (Self-contained) ---
+      //ANIMATION 3: FEATURES TO PRICING WIPE 
       gsap.to("#pricing-section", {
         clipPath: "circle(150% at 50% 50%)",
         ease: "power2.inOut",
@@ -70,7 +70,7 @@ const Hero = () => {
         },
       });
 
-      // --- ANIMATION 4: PRICING CARDS FADE-IN (No pin) ---
+      //ANIMATION 4: PRICING CARDS FADE-IN
       gsap.from("[data-pricing-card]", {
         scrollTrigger: {
           trigger: "#pricing-container",
@@ -84,20 +84,20 @@ const Hero = () => {
         ease: "power3.out",
       });
 
-      // --- 5. NEW ANIMATION: PRICING TO COMPANY WIPE ---
+      //ANIMATION 5: PRICING TO COMPANY WIPE 
       gsap.to("#company-section", {
-        clipPath: "inset(0% 0% 0% 0%)", // Wipes down from the top
+        clipPath: "inset(0% 0% 0% 0%)", 
         ease: "power2.inOut",
         scrollTrigger: {
-          trigger: "#pricing-container", // Triggers on the pricing container
-          start: "bottom bottom", // Starts when pricing bottom hits viewport bottom
+          trigger: "#pricing-container", 
+          start: "bottom bottom", 
           end: "+=1000",
           scrub: 1,
-          pin: "#pricing-container", // Pins the pricing section during the wipe
+          pin: "#pricing-container", 
         },
       });
 
-      // --- 6. NEW ANIMATION: COMPANY CONTENT FADE-IN ---
+      //ANIMATION 6: COMPANY CONTENT FADE-IN
       gsap.from("[data-company-box]", {
         scrollTrigger: {
           trigger: "#company-section",
@@ -111,26 +111,26 @@ const Hero = () => {
         ease: "power3.out",
       });
 
-      // --- 7. NEW ANIMATION: COMPANY TO CTA TRANSITION ---
+      //ANIMATION 7: COMPANY TO CTA TRANSITION
       const ctaTl = gsap.timeline({
         scrollTrigger: {
-          trigger: "#company-section", // The transition starts with the company section
+          trigger: "#company-section", 
           start: "bottom bottom",
           end: "+=1000",
           scrub: 1,
-          pin: true, // Pin the company section during the transition
+          pin: true, 
         },
       });
       ctaTl.to("#company-section", {
         scale: 0.9,
         opacity: 0,
         ease: "power2.inOut",
-      }); // Scale down and fade out company
+      }); 
 
-      // --- 8. NEW ANIMATION: CTA CONTENT FADE-IN ---
+      //ANIMATION 8: CTA CONTENT FADE-IN
       gsap.from("[data-cta-box]", {
         scrollTrigger: {
-          trigger: "#cta-section", // Triggered by the CTA section itself
+          trigger: "#cta-section",
           start: "top 60%",
         },
         opacity: 0,
@@ -143,7 +143,7 @@ const Hero = () => {
       gsap.set("[data-hero-subheader]", { opacity: 0, y: 20 });
 
 
-      // The intro animation remains separate
+      //Intro Animation
       const introTl = gsap.timeline();
       introTl.fromTo(
         ".char",
@@ -162,7 +162,7 @@ const Hero = () => {
         { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" },
         "<"
       );
-// --- GSAP-POWERED HOVER EFFECTS ---
+      //HOVER EFFECTS 
       
       const addHoverEffect = (selector: string, scale: number = 1.10) => {
         const elements = gsap.utils.toArray<HTMLElement>(selector);
@@ -181,9 +181,7 @@ const Hero = () => {
       addHoverEffect("[data-feature-box]");
       addHoverEffect("[data-pricing-card]");
       addHoverEffect("[data-company-card]", 1.03);
-
-      // --- 2. THE NEW LINE IS HERE ---
-      addHoverEffect("[data-pricing-button]", 1.10); // Applying a subtle scale to the pricing buttons
+      addHoverEffect("[data-pricing-button]", 1.10);
 
     }, component);
     return () => ctx.revert();
@@ -238,8 +236,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-      {/* This container is crucial for stacking the reveal effects */}
       <div className="relative">
         <Features />
         <div className="relative">

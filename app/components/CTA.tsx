@@ -1,10 +1,7 @@
-// components/CTA.jsx
-
 import React from "react";
 
 const CTA = () => {
   return (
-    // This section is positioned to sit underneath the Company section for the reveal effect
     <section 
       id="cta-section" 
       className="absolute inset-0 w-full min-h-screen flex flex-col justify-center items-center bg-primary text-primary-foreground"

@@ -1,11 +1,8 @@
-// components/Features.jsx
-
 import React from "react";
 import { Zap, BrainCircuit, Rocket } from "lucide-react";
 
 const Features = () => {
   return (
-    // We removed the z-index, it's not needed.
     <section id="features-section" className="relative w-full min-h-screen bg-secondary pt-48 pb-32 px-4 md:px-8">
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-12">
@@ -16,8 +13,6 @@ const Features = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* --- REMOVED transition-* and hover:scale-110 from all cards --- */}
-
           <div data-feature-box className="bg-background p-8 rounded-2xl shadow-lg shadow-secondary/20">
             <Zap size={32} className="mb-4 text-primary" />
             <h3 className="text-2xl font-bold mb-2 text-foreground">Blazing Fast</h3>

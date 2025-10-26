@@ -25,7 +25,6 @@ const Pricing = () => {
                 <li className="flex items-center gap-2"><CheckCircle2 size={18} className="text-primary" /> Basic Analytics</li>
                 <li className="flex items-center gap-2"><CheckCircle2 size={18} className="text-primary" /> Community Support</li>
               </ul>
-              {/* --- 1. ADDED SELECTOR, REMOVED CSS HOVER --- */}
               <button data-pricing-button className="w-full bg-foreground text-background font-bold py-3 rounded-lg">Get Started</button>
             </div>
             
